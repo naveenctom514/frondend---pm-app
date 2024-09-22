@@ -8,6 +8,7 @@ import { validateEmailOnBlur } from "../../utils/validation";
 import { VALIDATE_TRIGGERS } from "../../utils/constants";
 //import LoginPageSvg from "../../assets/loginPageSvg.svg";
 import LoginPageSvg from "../../assets/loginPageSvg.jpg";
+import { colors } from "@mui/material";
 export const EmailPasswordLogin = ({ setIsLoggingWithOtp }) => {
   const { isLoading, csrf } = useSelector((state) => state.auth);
 
@@ -30,8 +31,9 @@ export const EmailPasswordLogin = ({ setIsLoggingWithOtp }) => {
         }}
       >
         <div className="flex items-center justify-center h-screen mr-8">
-          <img src={LoginPageSvg} alt="My SVG" />
-        </div>
+  <h1 className="text-white text-4xl">Performance Management App @ Meeraq</h1>
+</div>
+
       </div>
 
       {/* Right Half */}
@@ -165,10 +167,10 @@ export const EmailPasswordLogin = ({ setIsLoggingWithOtp }) => {
         </div>
         <div className="flex !pt-[96px] pl-2 pr-2 justify-between items-end self-stretch">
           <div className="text-text-4 font-inter text-sm font-normal">
-            © 2024 CMS.
+            © 2024 Inmuto Consulting Pvt Ltd
           </div>
           <div className="text-text-4 font-inter text-base font-normal">
-            Adhi
+            Naveen C Tom
           </div>
         </div>
       </div>
